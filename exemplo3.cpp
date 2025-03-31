@@ -1,18 +1,9 @@
 #include <iostream>
+#include "converte_declara.hpp"
 using std::cin;
 using std::cout;
 using std::endl;
 
-// Modularização interna através de funções
-float celsius2fahrenheit(float temp) {
-    return temp * 1.8 + 32;
-}
-
-float fahrenheit2celsius(float temp) {
-    return (temp - 32)/1.8;
-}
-
-// Função principal
 int main(){
     int opcao;
 
@@ -47,6 +38,5 @@ int main(){
         default:
             cout << "Opção inválida" << endl;
     }
-
     return 0;
 }
