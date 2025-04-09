@@ -1,4 +1,4 @@
-#include "num_amigos.h"
+#include "num_amigos.hpp"
 
 int soma_divisores(int num){
 
