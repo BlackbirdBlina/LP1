@@ -1,3 +1,4 @@
+#include <iostream>
 #include "conta_banc.h"
 
 // Implementação do construtor para a inicialização da classe ContaBancaria
@@ -22,6 +23,8 @@ void ContaBancaria::transferir(double valor, ContaBancaria &destino) {
 
         //"Aplica" a função "sacar" na *conta* do titular que está realizando a transferência. "This" é uma referência padrão para a *conta*/objeto de origem
         this->sacar(valor);
+
+        cout << "Transferido: R$ "<< valor/2 << "da conta " << numero << " para a conta " << destino.numero << endl;
     }
 }
 
@@ -29,9 +32,18 @@ void ContaBancaria::transferir(double valor, ContaBancaria &destino1, ContaBanca
     if(saldo >= valor){
         destino1.depositar(valor/2);
         destino2.depositar(valor/2);
-        
+
         //"Aplica" a função "sacar" na *conta* do titular que está realizando a transferência. "This" é uma referência padrão para a *conta*/objeto de origem
         this->sacar(valor);
+        cout << "Transferido: R$ "<< valor/2 << "para cada conta (" << destino1.numero << " e " << destino2.numero << " )" << endl;
     }
+}
+
+void ContaBancaria::exibirSaldo() {
+    cout << "Saldo atual da conta "<< numero << ": R$" << saldo << endl;
+}
+
+void ContaBancaria::exibirInformacoes() {
+    cout << "Titular: " << titular.getnome() << ", CPF: " << titular.getcpf() << endl;
 }
 
