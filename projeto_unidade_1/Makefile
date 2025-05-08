@@ -16,15 +16,15 @@ $(PROG): $(OBJS)
 
 	$(CC) -o $(PROG) $(OBJS)
 
-main.o:
+main.o: main.cpp
 
 	$(CC) $(CPPFLAGS) -c main.cpp
 
-cliente.o: cliente.h
+cliente.o: cliente.h cliente.cpp
 
 	$(CC) $(CPPFLAGS) -c cliente.cpp
 
-conta_banc.O: conta_banc.h
+conta_banc.O: conta_banc.h conta_banc.cpp
 
 	$(CC) $(CPPFLAGS) -c conta_banc.cpp
 
