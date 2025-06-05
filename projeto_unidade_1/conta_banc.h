@@ -19,7 +19,7 @@ class ContaBancaria {
     void depositar(double valor);
     void sacar(double valor);
 
-    // Sobrecarga do método "transferir"
+    // Sobrecarga do método transferir
     void transferir(double valor, ContaBancaria &destino);
     void transferir(double valor, ContaBancaria &destino1, ContaBancaria &destino2);
 
