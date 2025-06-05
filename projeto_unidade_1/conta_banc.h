@@ -3,7 +3,7 @@
 #include "cliente.h"
 #include <string>
 
-// Declaração da classe Cliente
+// Declaração da classe ContaBancaria
 class ContaBancaria {
     private:
     int numero;
