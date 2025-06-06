@@ -8,6 +8,16 @@ class Gerente : public Funcionario {
     private:
     float bonusMensal;
 
+    public:
+    // Declaração do construtor parametrizado
+    Gerente(int bonusMensal);
+
+    // Declaração dos métodos setters
+    void setBonusMensal(int bonusMensal);
+
+    // Declaração dos métodos getters
+    int getBonusMensal();
+
 };
 
 #endif

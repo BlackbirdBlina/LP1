@@ -8,6 +8,15 @@ class Estagiario : public Funcionario {
     private:
     int horasTrabalhadas;
 
+    public:
+    // Declaração do construtor parametrizado
+    Estagiario(int horasTrabalhadas);
+
+    // Declaração dos métodos setters
+    void setHorasTrabalhadas(int horasTrabalhadas);
+
+    // Declaração dos métodos getters
+    int getHorasTrabalhadas();
 };
 
 #endif
