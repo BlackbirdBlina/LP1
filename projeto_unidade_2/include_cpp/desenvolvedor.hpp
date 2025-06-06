@@ -9,6 +9,16 @@ class Desenvolvedor : public Funcionario {
     private:
     int quantidadeDeProjetos;
 
+    public:
+    // Declaração do construtor parametrizado
+    Desenvolvedor(int quantidadeDeProjetos);
+
+    // Declaração dos métodos setters
+    void setQuantidadeDeProjetos(int quantidadeDeProjetos);
+
+    // Declaração dos métodos getters
+    int getQuantidadeDeProjetos();
+
 };
 
 #endif
