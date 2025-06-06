@@ -11,13 +11,18 @@ class Desenvolvedor : public Funcionario {
 
     public:
     // Declaração do construtor parametrizado
-    Desenvolvedor(int quantidadeDeProjetos);
+    Desenvolvedor(string nome, float salarioBase, int id, int quantidadeDeProjetos);
 
     // Declaração dos métodos setters
     void setQuantidadeDeProjetos(int quantidadeDeProjetos);
 
     // Declaração dos métodos getters
     int getQuantidadeDeProjetos();
+
+    // Declaração dos métodos exibirInformacoes e calcularSalarioFinal para sobrescrever os métodos virtuais
+    void exibirInformacoes();
+
+    float calcularSalarioFinal();
 
 };
 

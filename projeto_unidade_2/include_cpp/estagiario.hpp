@@ -10,13 +10,18 @@ class Estagiario : public Funcionario {
 
     public:
     // Declaração do construtor parametrizado
-    Estagiario(int horasTrabalhadas);
+    Estagiario(string nome, float salarioBase, int id, int horasTrabalhadas);
 
     // Declaração dos métodos setters
     void setHorasTrabalhadas(int horasTrabalhadas);
 
     // Declaração dos métodos getters
     int getHorasTrabalhadas();
+
+    // Declaração dos métodos exibirInformacoes e calcularSalarioFinal para sobrescrever os métodos virtuais
+    void exibirInformacoes();
+
+    float calcularSalarioFinal();
 };
 
 #endif
