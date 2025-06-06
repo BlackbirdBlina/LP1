@@ -3,7 +3,7 @@
 using namespace std;
 
 // Implementação do construtor para a inicialização da subclasse Gerente
-Gerente::Gerente(string nome, float salarioBase, int id, int bonusMensal):
+Gerente::Gerente(string nome, float salarioBase, int id, float bonusMensal):
     Funcionario(nome, salarioBase, id), bonusMensal(bonusMensal) {/* vazio */}
 
 // Implementação dos métodos setters

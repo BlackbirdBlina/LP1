@@ -10,7 +10,7 @@ class Gerente : public Funcionario {
 
     public:
     // Declaração do construtor parametrizado
-    Gerente(string nome, float salarioBase, int id, int bonusMensal);
+    Gerente(string nome, float salarioBase, int id, float bonusMensal);
 
     // Declaração dos métodos setters
     void setBonusMensal(int bonusMensal);
