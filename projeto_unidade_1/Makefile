@@ -24,7 +24,7 @@ cliente.o: cliente.h cliente.cpp
 
 	$(CC) $(CPPFLAGS) -c cliente.cpp
 
-conta_banc.O: conta_banc.h conta_banc.cpp
+conta_banc.o: conta_banc.h conta_banc.cpp
 
 	$(CC) $(CPPFLAGS) -c conta_banc.cpp
 
