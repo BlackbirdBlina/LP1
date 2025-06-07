@@ -30,3 +30,8 @@ float Funcionario::getSalarioBase() {
 int Funcionario::getId() {
     return id;
 }
+
+// Implementando exibirInformacoes
+void Funcionario::exibirInformacoes(){
+
+}
