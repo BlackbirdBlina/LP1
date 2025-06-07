@@ -13,6 +13,9 @@ class Desenvolvedor : public Funcionario {
     // Declaração do construtor parametrizado
     Desenvolvedor(string nome, float salarioBase, int id, int quantidadeDeProjetos);
 
+    // Declaração do destrutor
+    ~Desenvolvedor() = default;
+
     // Declaração dos métodos setters
     void setQuantidadeDeProjetos(int quantidadeDeProjetos);
 

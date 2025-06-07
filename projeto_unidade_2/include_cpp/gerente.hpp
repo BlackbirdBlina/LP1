@@ -12,6 +12,9 @@ class Gerente : public Funcionario {
     // Declaração do construtor parametrizado
     Gerente(string nome, float salarioBase, int id, float bonusMensal);
 
+    // Declaração do destrutor
+    ~Gerente() = default;
+
     // Declaração dos métodos setters
     void setBonusMensal(int bonusMensal);
 

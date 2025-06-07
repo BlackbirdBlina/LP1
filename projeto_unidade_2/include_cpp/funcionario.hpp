@@ -20,6 +20,9 @@ class Funcionario {
     // Declaração do construtor parametrizado
     Funcionario(string nome, float salarioBase, int id);
 
+    // Declaração do destrutor
+    virtual ~Funcionario() = default;
+
     // Declaração dos métodos setters
     void setNome(string nome);
     void setSalarioBase(float salarioBase);

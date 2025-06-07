@@ -12,6 +12,9 @@ class Estagiario : public Funcionario {
     // Declaração do construtor parametrizado
     Estagiario(string nome, float salarioBase, int id, int horasTrabalhadas);
 
+    // Declaração do destrutor
+    ~Estagiario() = default;
+
     // Declaração dos métodos setters
     void setHorasTrabalhadas(int horasTrabalhadas);
 
