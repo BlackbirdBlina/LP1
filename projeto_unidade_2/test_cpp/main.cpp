@@ -6,6 +6,7 @@
 #include <vector>
 using namespace std;
 
+
 int main() {
 
     // Declaração do vetor de ponteiros para Funcionario com 10 posições
@@ -118,7 +119,7 @@ int main() {
 
         default:
             cout << "Valor inválido. Por favor, digite um valor válido." << endl;
-            break;
+            return -1;
         }
 
     }
